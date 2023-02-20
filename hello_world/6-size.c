@@ -10,7 +10,7 @@
 		char c;
 		int i;
 		int l;
-		int ll;
+		int l;
 		int f;
 
 		printf("Size of a char: %lu byte(s)\n",(unsigned long)sizeof(c));
