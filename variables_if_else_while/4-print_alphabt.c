@@ -6,7 +6,7 @@ int main(void){
 	q = 'q';
 	e = 'e';
 
-	for(x 'a'; x <= 'z'; x++){
+	for(x = 'a'; x <= 'z'; x++){
 		if(x != q || x! = e){
 			putchar(x);
 		}
