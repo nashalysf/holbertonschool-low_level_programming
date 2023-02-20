@@ -4,10 +4,14 @@
 
 int main(void)
 {
-	putchar x = 'a';
-	while(x <= 'z')
-	{
-		printf("%c\n", x);
+	char x;
+
+	x = 'a';
+
+	while( x <= z){
+		putchar(x);
+		x++;
+		putchar("\n");
 	}
 	return(0);
 }
