@@ -4,11 +4,9 @@
 
 int main(void)
 {
-	char x;
+	char x = 'a';
 
-	x = 'a';
-
-	while( x <= z){
+	while( x <= 'z'){
 		putchar(x);
 		x++;
 		putchar("\n");
