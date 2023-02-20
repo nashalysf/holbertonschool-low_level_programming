@@ -4,12 +4,17 @@ int main(void){
 		
 	int x;
 
-	for(x = 0; x <= 9; x++){
-	
-		putchar(x);
+	for(x = 0; x <= 16; x++){
+		if(x <= 9){
+			putchar(x);
+		} else if(x <= 10){
+			x = 'a';
+			putchar(x);
+			x++;
+		}
 	}
 	
-	putchar("abcdef\n");
+	putchar('\n');
 	return(0);
 
 
