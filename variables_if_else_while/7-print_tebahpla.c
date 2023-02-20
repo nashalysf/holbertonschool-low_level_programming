@@ -8,5 +8,5 @@ int main(void){
 		putchar(x);
 	}
 	putchar('\n');
-	retur(0);
+	return(0);
 }
