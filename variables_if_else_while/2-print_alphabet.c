@@ -4,12 +4,11 @@
 
 int main(void)
 {
-	char x = 'a';
+	char x;
 
-	while( x <= 'z'){
-		putchar(x);
-		x++;
-		putchar("\n");
+	for(x = 'a'; x <= 'z'; x++){
+		putchar(x, "\n");
 	}
+
 	return(0);
 }
