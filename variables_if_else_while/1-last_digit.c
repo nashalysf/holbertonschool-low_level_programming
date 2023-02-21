@@ -3,9 +3,13 @@
 #include <time.h>
 /*
 *main - Entry point
+*@if: remainig digit when n divided by 10. is more than 5.
+*@ifelse: remaining digit when divided is 0.
+*@else: remaining digit when divided is less than 5.
 *
 *Description: checks the remaining value of the condition,
 *and executes with controllers.
+*
 *Return: Always 0. Success
 */
 int main(void)
