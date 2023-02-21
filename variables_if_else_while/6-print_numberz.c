@@ -1,12 +1,17 @@
 #include <stdio.h>
-/*
- *main - Entry point 
- *Return: Always 0. Success
- */
+/**
+*main - Entry point
+*
+*Description: prints all single digits of base 10.
+*and executes with controllers.
+*Return: Always 0. (Success)
+*/
+
 int main(void)
 {
 	int x;
-	for(x = '0'; x <= '9'; x++)
+
+	for (x = '0'; x <= '9'; x++)
 	{
 		putchar(x);
 	}
