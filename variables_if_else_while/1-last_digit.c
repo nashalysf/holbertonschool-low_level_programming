@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /*
- *@main - Entry point
+ *main - Entry point
  *Description: 'checks the remaining value of the condition and executes with controllers'
  *Return: Always 0. Success
  */
