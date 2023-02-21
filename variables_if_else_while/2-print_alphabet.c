@@ -1,8 +1,12 @@
 #include <stdio.h>
 /**
-*main-Entry point of function
-*Return: Always 0.Success
+*main - Entry point
+*
+*Description: for every letter in lowercase,
+*print and go to next.
+*Return: Always 0. (Success)
 */
+
 int main(void)
 {
 	char x;
