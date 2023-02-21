@@ -1,7 +1,6 @@
 #include <stdio.h>
-/*
-*main -Entry point
-*@for: x starting at a will increase until reached z
+/**
+*main -Entry point 
 *Return: Always 0.Success
 */
 int main(void)
