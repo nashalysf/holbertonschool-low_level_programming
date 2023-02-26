@@ -7,12 +7,15 @@
 */
 int _isalpha(int c)
 {
-char x;
+char x, y;
 for (x = 'a'; x <= 'z'; x++)
 {
-if (x == c)
+for (y == 'A'; y <= 'Z'; y++)
+{
+if (y == c || x == c)
 {
 return (1);
+	}
 }
 }
 return (0);
