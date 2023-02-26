@@ -12,16 +12,19 @@ if (n >= 1)
 {
 x = '+';
 _putchar(x);
+return (1);
 }
 else if (n == 0)
 {
 x = '0';
 _putchar(x);
+return (0);
 }
 else if (n < 0)
 {
 x = '-';
 _putchar(x);
+return (1);
 }
-return (0);
+return(n);
 }
