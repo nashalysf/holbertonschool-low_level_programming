@@ -3,6 +3,7 @@
 *_islower - Entry point
 *
 *Description: checks for lowercase.
+*int c - letter parameter.
 *Return: 0. (Success)
 */
 int _islower(int c)
