@@ -7,8 +7,8 @@
 *Return: 0.(Success)
 */
 int print_sign(int n){
-char x = " ";
-if (n => 1)
+char x;
+if (n >= 1)
 {
 x = '+';
 _putchar(x);
