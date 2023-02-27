@@ -10,11 +10,11 @@ int _isupper(int c)
 	int x;
 	for (x = 'a'; x <= 'z'; x++){
 	if (x == c){
-	return (1);
+	return (0);
 	}
 	else
 	{
-	return (0);
+	return (1);
 }
 }
 return (0);
