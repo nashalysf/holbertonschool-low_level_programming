@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 /**
 *mul- Entry point
 *@a: first int param
