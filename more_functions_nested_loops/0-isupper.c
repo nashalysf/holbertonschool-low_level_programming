@@ -7,26 +7,12 @@
 */
 int _isupper(int c)
 {
-	int x,y;
-	for (x = 'a'; x <= 'z'; x++)
-	{
-		for (y = 32; y <= 126; y++){
-		if (x == y){
-		return (1);
-		}
-		else {
-		return (0);
-		}
-		}
+	char x;
+	for(x = 'A'; x <= 'Z'; x++){
 	if (x == c)
 	{
-	return (0);
-	}
-	else
-	{
 	return (1);
-}
-}
-}
-return (0);
+	}
+	}
+	return (0);
 }
