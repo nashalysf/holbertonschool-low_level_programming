@@ -18,7 +18,7 @@ int _isupper(int c)
 	{
 	return (1);
 }
-for (y = 'A'; y <= 'Z'; y++)
+for (y = 32; y <= 126; y++)
 {
 if (y == c){
 return (0);
