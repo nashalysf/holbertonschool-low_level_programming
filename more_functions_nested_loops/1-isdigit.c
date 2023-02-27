@@ -5,9 +5,11 @@
 *Description: checks for a digit.
 *Return: 0. (Success)
 */
-int _isdigit(int c){
+int _isdigit(int c)
+{
 char x;
-	for (x = '0'; x <= '9'; x++){
+	for (x = '0'; x <= '9'; x++)
+	{
 	if (x == c)
 	{
 		return (1);
