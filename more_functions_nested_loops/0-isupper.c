@@ -10,6 +10,14 @@ int _isupper(int c)
 	int x,y;
 	for (x = 'a'; x <= 'z'; x++)
 	{
+		for (y = 32; y <= 126; y++){
+		if (x == y){
+		return (1);
+		}
+		else {
+		return (0);
+		}
+		}
 	if (x == c)
 	{
 	return (0);
@@ -17,14 +25,6 @@ int _isupper(int c)
 	else
 	{
 	return (1);
-}
-for (y = 32; y <= 126; y++)
-{
-if (y == c){
-return (1);
-} 
-else{
-return (0);
 }
 }
 }
