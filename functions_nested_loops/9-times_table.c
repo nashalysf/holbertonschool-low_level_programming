@@ -2,7 +2,8 @@
 /**
 *times_table- Entry point
 *
-*Description: print table.
+*Description: print table and continue
+*breaks of loop.
 *Return: 0. (Success)
 */
 void times_table(void)
@@ -20,6 +21,7 @@ if (y != 0)
 _putchar(' ');
 _putchar(z + '0');
 if (y == 9)
+continue;
 _putchar(',');
 _putchar(' ');
 }
@@ -28,6 +30,7 @@ else
 _putchar((z / 10) + '0');
 _putchar((z % 10) + '0');
 if (y == 9)
+continue;
 _putchar(',');
 _putchar(' ');
 }
