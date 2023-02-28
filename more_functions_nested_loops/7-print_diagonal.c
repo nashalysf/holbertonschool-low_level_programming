@@ -13,8 +13,8 @@ if (n > 0)
 for (; x < n; x++)
 {
 _putchar('\\');
-_putchar(' ');
 _putchar('\n');
+_putchar(' ');
 }
 }
 _putchar('\n');
