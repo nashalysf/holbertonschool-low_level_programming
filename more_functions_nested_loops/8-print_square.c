@@ -20,6 +20,7 @@ if (size > 0)
 
 	}
 }
+else
 _putchar('\n');
 }
 
