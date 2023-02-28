@@ -8,10 +8,10 @@
 */
 void print_line(int n)
 {
-
+int x = n;
 if (n > 0)
 {
-for (; n <= 50; n++)
+for (; n == x; n++)
 {
 _putchar('_');
 }
