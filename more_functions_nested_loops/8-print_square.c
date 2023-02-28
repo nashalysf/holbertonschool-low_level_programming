@@ -14,7 +14,7 @@ if (size > 0)
 {
 	for (; x < size; x++)
 	{
-		for (; y <= x; y++)
+		for (; y < size; y++)
 		_putchar('#');
 
 	_putchar('\n');
