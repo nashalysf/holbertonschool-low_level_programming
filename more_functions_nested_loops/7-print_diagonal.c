@@ -15,6 +15,7 @@ if (n > 0)
 	for (; x < n; x++)
 	{
 	for (y = 0; y <= x; y++)
+		if (y !=0)
 		_putchar(' ');
 _putchar('\\');
 _putchar('\n');
