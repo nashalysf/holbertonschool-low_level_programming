@@ -8,9 +8,9 @@
 */
 void _puts(char *str)
 {
-	size_t i = strlen(str);
+	size_t x = strlen(str);
 
-for (; i >= 1; i++)
+for (; x >= 1; x++)
 {
 	_putchar(str[i]);
 }
