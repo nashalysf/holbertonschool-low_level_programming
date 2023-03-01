@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
 *_puts- Entry point
 *@str: string being printed
@@ -8,7 +9,8 @@
 void _puts(char *str)
 {
 	int i;
-for (i = 0; i < str; i++)
+	size_t l = strlen(str);
+for (i = 0; i < l; i++)
 {
 	_putchar(str[i]);
 }
