@@ -1,0 +1,21 @@
+#include <string.h>
+#include "main.h"
+/**
+*- Entry point
+*
+*Description: 
+*Return: 0. (Success)
+*/
+void rev_string(char *s)
+{
+int i = 0;
+int x = 0;
+while (s[i] != '\0')
+	i++;
+while (x < i--)
+{
+	char y = s[i];
+	_putchar(y);
+
+}
+}
