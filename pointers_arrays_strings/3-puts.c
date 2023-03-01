@@ -9,7 +9,7 @@ void _puts(char *str)
 {
 	int i;
 
-for (i = 0; i >= 1; i++)
+for (i = str[i]; i >= 1; i++)
 {
 	_putchar(str[i]);
 }
