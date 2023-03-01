@@ -14,6 +14,6 @@ while(s[i] != '\0')
 s++;
 _putchar(s[i--]);
 }
-_putchar(\n');
+_putchar('\n');
 }
 
