@@ -10,6 +10,5 @@ int _strlen(char *s)
 {
 size_t x = strlen(s);
 
-_putchar(x + '0');
 return (0);
 }
