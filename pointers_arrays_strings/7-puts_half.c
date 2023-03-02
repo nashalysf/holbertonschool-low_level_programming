@@ -18,12 +18,12 @@ while (str[x] != '\0')
 if (x % 2 == 0)
 {	
 	d = x / 2;
-	_putchar(d);
+	return (d);
 }	
 if (x % 2 == 1)
 {
 	d = (x - 1) / 2;
-	_putchar(d);
+	return (d);
 }
 for (; i < x; i++)
 	_putchar(str[i]);
