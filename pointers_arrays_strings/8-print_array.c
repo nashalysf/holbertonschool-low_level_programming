@@ -4,7 +4,7 @@
 *print_array- Entry point
 *@a: array param
 *@n: size of array
-*Description: prints each elemnt 
+*Description: prints each elemnt
 *that the array holds
 *Return: 0. (Success)
 */
@@ -15,5 +15,5 @@ int len = n;
 int i = 0;
 
 for (; i < len; i++)
-	printf("%d, \n", array[i];
-_putchar('\n');`}
+	printf("%d, \n", array[i]);
+_putchar('\n');
