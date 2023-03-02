@@ -20,7 +20,7 @@ for (; i < len; i++)
 	{
 		printf("%d, ", array[i]);
 	}
-	else
+	else if (i == len)
 	{
 		printf("%d", array[i]);
 	}
