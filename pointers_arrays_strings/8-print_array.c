@@ -16,7 +16,7 @@ int i = 0;
 
 for (; i < len; i++)
 {
-	printf("%d, \n", array[i]);
+	printf("%d, ", array[i]);
 }
 putchar('\n');
 }
