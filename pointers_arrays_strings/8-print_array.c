@@ -17,9 +17,13 @@ int i = 0;
 for (; i < len; i++)
 {
 	if (i != len)
+	{
 		printf("%d, ", array[i]);
+	}
 	else
-	printf("%d", array[i]);
+	{
+		printf("%d", array[i]);
+	}
 }
 putchar('\n');
 }
