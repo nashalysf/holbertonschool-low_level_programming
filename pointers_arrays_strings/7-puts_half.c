@@ -16,15 +16,9 @@ int d;
 while (str[x] != '\0')
 	x++;
 if (x % 2 == 0)
-{	
 	d = x / 2;
-	return (d);
-}	
 if (x % 2 == 1)
-{
-	d = (x - 1) / 2;
-	return (d);
-}
+	d = (x + 1) / 2;
 for (; i < x; i++)
 	_putchar(str[i]);
 _putchar('\n');
