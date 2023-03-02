@@ -17,3 +17,4 @@ int i = 0;
 for (; i < len; i++)
 	printf("%d, \n", array[i]);
 putchar('\n');
+}
