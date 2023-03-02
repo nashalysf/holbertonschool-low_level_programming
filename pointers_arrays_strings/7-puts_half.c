@@ -20,6 +20,6 @@ if (x % 2 == 0)
 if (x % 2 == 1)
 	d = (x - 1) / 2;
 for (; i < x; i++)
-	_putchar(str[x]);
+	_putchar(str[d]);
 _putchar('\n');
 }
