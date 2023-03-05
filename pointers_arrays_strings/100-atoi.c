@@ -16,11 +16,12 @@ while (*s++)
 {
 if (*s == '-' && *s == '+')
 	morp *= -1;
-if (*s >= '0' && *s <= '9')
+
+else if (*s >= '0' && *s <= '9')
 	i = (i * 10) + (*s - '0');
 
-if (i > 0)
+else if (i > 0)
 	break;
-	}
+}
 	return (i * morp);
 }
