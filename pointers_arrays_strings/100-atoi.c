@@ -32,6 +32,6 @@ int _atoi(char *s)
 			i++;
 		}
 	}
-	morp *= -1;	
+	morp *= -1;
 	return (num * morp);
 }
