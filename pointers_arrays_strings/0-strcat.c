@@ -22,9 +22,9 @@ char *_strcat(char *dest, char *src)
 	{
 		*(dest + i) = *(src + x);
 		i++;
+		_putchar('\n');
 	}
 	x++;
-	_putchar('\n');
 	}
 	return (dest);
 }
