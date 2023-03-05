@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 #include <stdio.h>
 /**
 *_atoi- Entry point
@@ -9,10 +9,18 @@
 */
 int _atoi(char *s)
 {
-int i = 1;
-int x = 0;
-while(s)
+int morp = 1;
+int i = 0;
 
+while (*s++)
+{
+if (*s == '-' && *s == '+')
+	morp *= -1;
+if (*s >= '0' && *s <= '9')
+	i = (i * 10) + (*s - '0');
 
-return (0);
+if (i > 0)
+	break;
+	}
+	return (i * morp);
 }
