@@ -24,6 +24,7 @@ char *_strcat(char *dest, char *src)
 		i++;
 	}
 	x++;
+	_putchar('\n');
 	}
 	return (dest);
 }
