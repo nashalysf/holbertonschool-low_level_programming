@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 int morp = 1;
-int i = 0;
+unsigned int i = 0;
 
 while (*s++)
 {
