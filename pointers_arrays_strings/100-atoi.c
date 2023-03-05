@@ -8,20 +8,30 @@
 *Return: 0. (Success)
 */
 int _atoi(char *s)
-{
-int morp = 1;
-unsigned int i = 0;
+	{
+	int i = 0;
+	int num = 0;
+	int morp = 1;
 
-while (*s++)
-{
-if (*s == '-')
-	morp *= -1;
-
-else if (*s >= '0' && *s <= '9')
-	i = (i * 10) + (*s - '0');
-
-else if (i > 0)
-	break;
-}
-	return (i * morp);
+	while ((s[i] < '0' || s[i] > '9') && s[i] != 0)
+	{
+		if (s[i] == '-')
+			morp *= -1;
+		i++;
+	}
+	while ((s[i] >= '0' && s[i] <= '9') && s[i] != 0)
+	{
+		if (num >= 0)
+		{
+			num = (num * 10) - (s[i] - '0');
+			i++;
+		}
+		else
+		{
+			num = (num * 10) - (s[i] - '0');
+			i++;
+		}
+	}
+	morp *= -1;	
+	return (num * morp);
 }
