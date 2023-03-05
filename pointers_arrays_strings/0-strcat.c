@@ -4,7 +4,7 @@
 *_strcat- Entry point
 *@src: string param
 *@dest: string param
-*Description: concatenates two string 
+*Description: concatenates two string
 *Return: 0. (Success)
 */
 char *_strcat(char *dest, char *src)
@@ -13,7 +13,7 @@ char *_strcat(char *dest, char *src)
 	int i = 0;
 	int x = 0;
 
-	while(*(dest + i) != '\0')
+	while (*(dest + i) != '\0')
 		i++;
 
 	while (*(src + x) != '\0')
@@ -25,7 +25,5 @@ char *_strcat(char *dest, char *src)
 	}
 	x++;
 	}
-	_putchar('\n');
-	return (dest);	
-
+	return (dest);
 }
