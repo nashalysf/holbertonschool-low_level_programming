@@ -10,9 +10,11 @@ char *cap_string(char *str)
 {
 char *s = str;
 
-for (*s = 'a'; *s <= 'z'; s++)
+for (*s)
 {
-	*s -= 32;
+	if (*s >= 'a' && *s <= 'z')
+			*s -= 32;
+	s++;
 }
 return (s);
 }
