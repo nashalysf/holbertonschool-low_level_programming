@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*int _strspn- Entry point
+*_strspn- Entry point
 *@s: bytes from accept
 *@accept: initial segment
 *Description: gets length of substring
@@ -8,7 +8,7 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i= 0;
+	int i = 0;
 	int torf;
 	char *initial = accept;
 
