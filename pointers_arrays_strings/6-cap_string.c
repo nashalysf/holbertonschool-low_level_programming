@@ -10,10 +10,10 @@ char *cap_string(char *str)
 {
 char *s = str;
 
-while (*s)
+while (*s <= 'z')
 {
-	if (*s >= 'a' && *s <= 'z')
-			*s -= 32;
+	if (*s >= 'a')
+		*s -= 32;
 	s++;
 }
 return (s);
