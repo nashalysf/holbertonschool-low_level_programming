@@ -10,7 +10,7 @@ char *cap_string(char *str)
 {
 char *s = str;
 
-for (*s)
+while (*s)
 {
 	if (*s >= 'a' && *s <= 'z')
 			*s -= 32;
