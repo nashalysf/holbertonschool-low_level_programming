@@ -19,7 +19,7 @@ char *leet(char *l)
 		{
 			if (*(l + i) == *(c + x))
 			{
-				*(l + i) = *(n + x);	
+				*(l + i) = *(n + x);
 			}
 		x++;
 		}
