@@ -1,12 +1,12 @@
 #include "main.h"
 /**
-*_strncat- copies strings.
+*_strncpy- copies strings.
 * @dest: string param
 * @src: string param
 * @n: number of bytes
 * Return: char
 */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 int i = 0;
 
