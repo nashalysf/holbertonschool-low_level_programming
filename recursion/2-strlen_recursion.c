@@ -12,6 +12,7 @@ int i = 0;
 if (*s)
 {
 	i = s[i];
-	return (i);
+	return(i);
 }
+return (1 + _strlen_recursion(s + 1));
 }
