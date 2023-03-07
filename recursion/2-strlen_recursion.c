@@ -11,7 +11,7 @@ int i = 0;
 
 if (*s)
 {
-	i = *(s + 1);
+	i = s + i;
 	return [i];
 }
 }
