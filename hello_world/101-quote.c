@@ -9,8 +9,8 @@
 
 int main(void)
 {
-	size_t fwrite(const char *STDOUT_FILENO, "and that piece of art is useful\""
-			"- Dora Korpar, 2015-10-19\n");
+	fwrite(STDOUT_FILENO, "and that piece of art is useful\""
+			"- Dora Korpar, 2015-10-19\n", 34);
 
 	return (1);
 }
