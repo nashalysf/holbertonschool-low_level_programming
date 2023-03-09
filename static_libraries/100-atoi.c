@@ -1,26 +1,37 @@
 #include "main.h"
+#include <stdio.h>
 /**
-*_strncat- concatenates two strings.
-* @dest: pointer param
-* @src: pointer param
-* @n: number of bytes
-* Return: char
+*_atoi- Entry point
+*@s: string param
+*Description: converts a string
+*to an integer
+*Return: 0. (Success)
 */
-char *_strncat(char *dest, char *src, int n)
-{
-	int i = 0;
-	int x = 0;
-
-	while (*(dest + i) != '\0')
-		i++;
-	while (*(src + x) != '\0')
+int _atoi(char *s)
 	{
-		if (x < n)
-		{
-			*(dest + i) = *(src + i);
-			x++;
-		}
+	int i = 0;
+	int num = 0;
+	int morp = 1;
+
+	while ((s[i] < '0' || s[i] > '9') && s[i] != 0)
+	{
+		if (s[i] == '-')
+			morp *= -1;
 		i++;
 	}
-	return (dest);
+	while ((s[i] >= '0' && s[i] <= '9') && s[i] != 0)
+	{
+		if (num >= 0)
+		{
+			num = (num * 10) - (s[i] - '0');
+			i++;
+		}
+		else
+		{
+			num = (num * 10) - (s[i] - '0');
+			i++;
+		}
+	}
+	morp *= -1;
+	return (num * morp);
 }
