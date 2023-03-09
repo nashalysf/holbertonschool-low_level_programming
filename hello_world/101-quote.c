@@ -11,7 +11,8 @@ int main(void)
 {
 	
 	char quote[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-	fwrite(quote, 2, 59);
+	FILE *fp = fopen("output.txt", "w");
+	fwrite(quote, sizeof(char), strlen(str), fp);
+	fclose(fp);
 	return (1);
 }
