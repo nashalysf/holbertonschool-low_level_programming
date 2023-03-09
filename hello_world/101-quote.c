@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	fwrite(char *STDOUT_FILENO, "and that piece of art is useful\""
+	fwrite(const char *STDOUT_FILENO, "and that piece of art is useful\""
 			"- Dora Korpar, 2015-10-19\n", 34);
 
 	return (1);
