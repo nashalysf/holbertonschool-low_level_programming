@@ -1,22 +1,14 @@
 #include "main.h"
+#include <string.h>
 /**
-*_strncpy- copies strings.
-* @dest: string param
-* @src: string param
-* @n: number of bytes
-* Return: char
+*_strlen- Entry point
+*@s: pointer param
+*Description: returns length of string
+*Return: 0. (Success)
 */
-char *_strncpy(char *dest, char *src, int n)
+int _strlen(char *s)
 {
-int i = 0;
+size_t x = strlen(s);
 
-while (i < n && *(src + i) != '\0')
-{
-	*(dest + i) = *(src + i);
-	i++;
-}
-while (i < n)
-	dest[i++] = '\0';
-
-return (dest);
+return (x);
 }
