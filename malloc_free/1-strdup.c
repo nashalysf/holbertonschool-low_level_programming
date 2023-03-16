@@ -14,18 +14,17 @@ char *s;
 int i = 0;
 int len = 0;
 
-s = malloc((len + 1) * sizeof(char));
+s = (char *)malloc((len + 1) * sizeof(char));
 
-if (*str == 1)
+if (str == '\0')
 	return ('\0');
-for (; len > s[i]; len++)
+for (; str[i] != '\0'; len++)
 {
 while (i < len)
 {
 s[i] = str[i];
 i++;
 }
-s[i] = '\0';
 }
 return (s);
 }
