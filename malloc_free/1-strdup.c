@@ -16,7 +16,7 @@ int len = 0;
 
 s = (char *)malloc((len + 1) * sizeof(char));
 
-if (str == 1)
+if (str == '0')
 	return ('\0');
 for (; str[i] != '\0'; len++)
 {
