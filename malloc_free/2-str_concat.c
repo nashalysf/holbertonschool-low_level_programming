@@ -18,10 +18,14 @@ char *str_concat(char *s1, char *s2)
 
 	char *s = (char *)malloc(sizeof(char) * mem);
 
+	while (mem)
+	{
 	for (i = 0; i < lens1; i++)
 		s[i] = s1[i];
 	for (x = 0; x < lens2; x++)
 		s[lens1 + i] = s2[i];
 	s[mem - 1] = '\0';
+	}
+
 	return (s);
 }
