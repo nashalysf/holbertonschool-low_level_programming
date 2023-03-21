@@ -19,7 +19,7 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	aptr = malloc(sizeof(int) * ((min - max) + 1));
+	aptr = malloc(((min - max) + 1) * sizeof(int));
 	if (aptr == NULL)
 		return (NULL);
 
