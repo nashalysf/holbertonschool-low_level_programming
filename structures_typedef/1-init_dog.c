@@ -3,7 +3,6 @@
 #include <stdlib.h>
 /**
  * init_dog - entry point
- * @dog: dog structure
  * @d: address of struct
  * @name: dogs name
  * @age: dogs name
@@ -13,7 +12,10 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	if (d != NULL)
+	{
 	d->name = name;
 	d->age = age;
 	d->owner = owner;
+	}
 }
