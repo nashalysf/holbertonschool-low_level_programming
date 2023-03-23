@@ -1,7 +1,7 @@
 #ifndef _DOG_
 #define _DOG_
 /**
- * struct dog - entry point
+ * struct dog - structure / obj constructor
  * @name: dogs name
  * @age: dogs age
  * @owner: owners name
@@ -15,18 +15,16 @@ char *owner;
 };
 
 /**
-* struct dog - entry point
+* struct dog - init a var
 * @name: dogs name
 * @age: dogs age
 * @owner: owners name
-* Description: initializes a var
 */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
 /**
- * print_dog - entry point
+ * print_dog - prints dog struct
  * @d: pointer to dog structure
- * Description: prints dog struct
  */
 void print_dog(struct dog *d);
 
@@ -36,19 +34,16 @@ void print_dog(struct dog *d);
 typedef struct dog dog_t;
 
 /**
- * new_dog - entry point
+ * new_dog - creates new dog
  * @name: dogs name
  * @age: dogs age
  * @owner: dogs owner
- * Description: creates a new dog
  */
 dog_t *new_dog(char *name, float age, char *owner);
 
 /**
- * free_dog - entry point
- * @dog_t: macro for struct dog
+ * free_dog - frees dog struct
  * @d: structure pointer
- * Description: frees dog structure
  */
 void free_dog(dog_t *d);
 #endif
