@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *  -
- *@ :
- *Return:
+ *array_iterator - call a func & param
+ *@array : array as arg
+ *@size: sizeof array to iterate
+ *@action: function we are calling
+ *Return: void
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
