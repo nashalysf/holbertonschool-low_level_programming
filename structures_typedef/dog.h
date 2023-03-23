@@ -30,7 +30,10 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
  */
 void print_dog(struct dog *d);
 
-#define dog_t struct dog
+/**
+ * dog_t: new name od struct dog
+ */
+typedef struct dog dog_t;
 
 /**
  * new_dog - entry point
