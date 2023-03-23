@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
- *print_name - prints a name
+ *print_name - calls func that prints name
  *@name: name to be printed
  *@f: function pointer
  *Return: name
