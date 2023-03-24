@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * print_times_table - prints n times
  * @n: table dimensions
@@ -13,7 +14,7 @@ void print_times_table(int n)
 	{
 	for (i = 0; i <= n; i++)
 	{
-		putchar('0');
+		_putchar('0');
 		for (x = 0; x <= n; x++)
 			printf("%d\n", i * x);
 	}
