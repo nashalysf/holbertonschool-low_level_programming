@@ -16,7 +16,9 @@ void print_times_table(int n)
 	{
 		_putchar('0');
 		for (x = 0; x <= n; x++)
-			printf("%d\n", i * x);
+			table = i * x;
+			_putchar(table);
 	}
+			_putchar("\n");
 	}
 }
