@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *array_iterator - call a func & param
+ *int_index - searches for int
  *@array : array as arg
  *@size: sizeof array to iterate
- *@action: function we are calling
- *Return: void
+ *@cmp: function we are calling
+ *Return: int
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -20,6 +20,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 				return (i);
 		}
 	}
-	
+
 	return (-1);
 }
