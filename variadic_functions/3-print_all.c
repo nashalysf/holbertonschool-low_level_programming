@@ -9,44 +9,43 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list ap;
-	char *ptr;
-	int i = 0;
+	char c;
+	int i;
+	float f;
+	char *s;
+	int x = 0;
 
-	va_start(ap, format);
+	var ptr;;
+	va_start(ptr, format);
 
-	if (format == NULL)
-		return;
-
-	for (; i < format[i]; i++)
+	while (format && format[x] != '\0')
 	{
-		if (i == 'c')
+		switch (format[x++])
 		{
-			char c = (char) va_arg(ap, int);
-			printf("%c", c);
+			case 'c':
+				c = (char) va_arg(ptr, int);
+				printf("%c", c);
+				break;
+			case 'i':
+				i = va_arg(ptr, int);
+				printf("%d", i);
+				break;
+			case 'f':
+				f = (float) va_arg(ptr, double);
+				printf("%f", f);
+				break;
+			case 's':
+				s = va_arg(ptr, char*);
+				if (s == NULL)
+					s = ("(nil)");
+				printf("%s", s);
+				break;
+			default:
+				continue;
 		}
-		if (i == 'i')
-		{
-			char i = va_arg(ap, int);
-
-			printf("%d", i);
-		}
-		if (i == 'f')
-		{
-			float f = (float) va_arg(ap, int);
-
-			printf("%f", f);
-		}
-		if (i == 's')
-		{
-			ptr = va_arg(ap, char *);
-
-			if (ptr == NULL)
-				printf("(nil)");
-			else
-				printf("%s", ptr);
-		}
+		if (format[x] != '\0')
+			printf(", ");
 	}
-	va_end(ap);
+	va_end(ptr);
 	printf("\n");
 }
