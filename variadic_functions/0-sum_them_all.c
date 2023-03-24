@@ -13,13 +13,13 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int sum = 0;
 	var args_num;
 
-	va_start(args_num, n);
-
 	if (n == 0)
 		return (0);
 
+	va_start(args_num, n);
+
 	for (i = 0; i < n; i++)
-		sum = va_arg(args_num, unsigned int);
+		sum += va_arg(args_num, unsigned int);
 
 	va_end(args_num);
 	return (sum);
