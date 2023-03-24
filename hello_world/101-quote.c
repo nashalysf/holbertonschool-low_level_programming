@@ -9,10 +9,12 @@
 
 int main(void)
 {
-	
+	int i = 0;
 	char quote[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	FILE *fp = fopen("output.txt", "w");
-	fwrite(quote, sizeof(char), fp);
-	fclose(fp);
+	while(quote[i])
+	{
+		putchar(quote[i]);
+		i++
+}
 	return (1);
 }
