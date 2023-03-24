@@ -10,8 +10,8 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	var ap;
-	unsigned num = 0;
-	unsigned i = 0;
+	unsigned int num = 0;
+	unsigned int i = 0;
 
 	va_start(ap, n);
 
@@ -21,7 +21,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 		num = va_arg(ap, int);
 		printf("%d", num);
-		
+
 		if (separator == NULL)
 			continue;
 		if (i < n - 1)
