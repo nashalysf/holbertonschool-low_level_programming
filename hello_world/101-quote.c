@@ -14,7 +14,7 @@ int main(void)
 	while(quote[i])
 	{
 		putchar(quote[i]);
-		i++
+		i++;
 }
 	return (1);
 }
