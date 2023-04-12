@@ -22,13 +22,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	if (h_ref != NULL)
 	{
-		while (h_ref->next || index == idx)
+		while (h_ref->next != NULL || index == idx)
 			h_ref = h_ref->next;
 		h_ref->next = ptr;
 	}
 	else
 	{
 		*h = ptr;
+		/*add_dnodeint_end(&ptr, n);*/
 	}
 
 	ptr->prev = h_ref;
