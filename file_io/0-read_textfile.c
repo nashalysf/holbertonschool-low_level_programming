@@ -11,10 +11,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int file_des;
 	ssize_t text_read_des, text_write_des;
 	char *buffer;
-	
+
 	buffer = malloc(sizeof(char) * letters);
 
-	if (filename == NULL)
+	if (!filename)
 		return (0);
 
 	file_des = open(filename, O_RDONLY);
