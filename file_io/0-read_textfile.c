@@ -28,6 +28,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	text_read_des = read(file_des, buffer, letters);
 	text_write_des = write(STDOUT_FILENO, buffer, text_read_des);
 
+	if (text_write_des == -1)
+		text_write_des = 0;
+
 	close(file_des);
 
 	free(buffer);
