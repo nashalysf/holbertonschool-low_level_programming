@@ -11,11 +11,9 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 
 	while (key)
 	{
-
-	if (key[i] == size)
-		continue;
 	i++;
-
+	if (key[i] == size)
+		break;
 	}
 	return (i);
 }
