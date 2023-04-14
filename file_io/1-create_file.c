@@ -20,12 +20,12 @@ int create_file(const char *filename, char *text_content)
 	if (!filename)
 		return (-1);
 
-	file_des = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+	file_des = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 
 	if (!buffer)
 		return (-1);
 
-	write(file_des, buffer, text_write_des);
+	write(file_des, text_content, text_write_des);
 
 
 	close(file_des);
