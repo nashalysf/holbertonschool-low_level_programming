@@ -8,7 +8,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int file_des, text_write_des;
+	int file_des, text_write_des, file;
 	char *buffer;
 
 	if (text_content)
@@ -25,8 +25,10 @@ int create_file(const char *filename, char *text_content)
 	if (!buffer)
 		return (-1);
 
-	write(file_des, text_content, text_write_des);
+	file = write(file_des, text_content, text_write_des);
 
+	if (file == -1)
+		return (-1);
 
 	close(file_des);
 	free(buffer);
