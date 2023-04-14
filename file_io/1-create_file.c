@@ -25,9 +25,8 @@ int create_file(const char *filename, char *text_content)
 	if (!buffer)
 		return (-1);
 
-	file = write(file_des, buffer, text_write_des);
-	if (file == -1)
-		return (-1);
+	write(file_des, buffer, text_write_des);
+
 
 	close(file_des);
 	free(buffer);
