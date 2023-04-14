@@ -6,9 +6,13 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *new_table = malloc(sizeof(char) * size);
+	hash_table_t *new_table;
+
+	while (size >= 0)
+		new_table = malloc(sizeof(char) * size);
 
 	if (!new_table)
 		return (NULL);
+
 	return (new_table);
 }
