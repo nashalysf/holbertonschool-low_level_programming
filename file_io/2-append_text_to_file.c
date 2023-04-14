@@ -17,7 +17,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	buffer = malloc(sizeof(char) * text_write_des);
 
-	if (filename == NULL)
+	if (filename == NULL || text_content == NULL)
 		return (-1);
 
 	file_des = open(filename, O_WRONLY | O_APPEND);
