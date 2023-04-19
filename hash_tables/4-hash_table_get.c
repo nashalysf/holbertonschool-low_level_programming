@@ -9,18 +9,24 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	hash_node_t *n;
 	unsigned int i;
+	char *value;
 
 	if (!ht || !key)
 		return (NULL);
-	i = hash_djb2((unsigned char *)key) % (ht->size);
-	n = ht->array[i];
+	else if (strlen(key) == 0)
+		return (NULL);
 
-	while (n)
+	i = hash_djb2((unsigned char *)key) % (ht->size);
+	if ((ht->array)[i] == NULL)
+		return (NULL);
+
+	n = ht->array[i];
+	while (!value)
 	{
-		if (!strcmp(key, n->key))
-			return (n->value);
+		if (strcmp(n->key, key) == 0)
+			value = n->value;
 		n = n->next;
 	}
-	return (NULL);
+	return (value);
 
 }
