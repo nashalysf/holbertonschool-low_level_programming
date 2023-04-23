@@ -7,17 +7,22 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	unsigned int i = 0;
+	unsigned int i = 0, len = 0;
+	dlistint_t *aux = head;
 
 	if (head == NULL)
 		return (NULL);
 
-	while (head != NULL)
+	while (aux)
 	{
-		if (i == index)
-			break;
-		head = head->next;
-		i++;
+		len++;
+		aux = aux->next;
 	}
+		if (!head)
+			return (NULL);
+		if (index > len)
+			return (NULL);
+		for (; i < index; i++)
+			head = head->next;
 	return (head);
 }
